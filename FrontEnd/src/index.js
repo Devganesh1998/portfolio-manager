@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "antd/dist/antd.css";
+import './main.less';
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
@@ -11,13 +11,11 @@ import { Provider } from "react-redux";
 const store = configureStore();
 
 ReactDOM.render(
-  <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
         <App />
       </Provider>
-    </BrowserRouter>
-  </React.StrictMode>,
+    </BrowserRouter>,
   document.getElementById("root")
 );
 
